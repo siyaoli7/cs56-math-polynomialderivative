@@ -207,6 +207,60 @@ public class PolynomialTest
         assertEquals(new Polynomial( new int [] {1}),p1.plus(p2));
     }
 
+
+    /**
+       test derivative
+       @see Polynomial#derivative
+     */
+    
+    @Test public void testp1derivative()
+    {
+        Polynomial p1 = new Polynomial(new int[] {0});
+        assertEquals(new Polynomial( new int [] {0}),p1.derivative());
+    }
+    
+    /**
+       test derivative
+       @see Polynomial#derivative
+     */
+    
+    @Test public void testp2derivative()
+    {
+        Polynomial p = new Polynomial(new int[] {2,-3});
+        assertEquals(new Polynomial( new int [] {2}),p.derivative());
+    }
+
+    /**
+       test derivative
+       @see Polynomial#derivative
+     */
+    
+    @Test public void testp3derivative()
+    {
+        Polynomial p = new Polynomial(new int[] {1,-5,6});
+        assertEquals(new Polynomial( new int [] {2,-5}),p.derivative());
+    }
+
+    /**
+       test derivative
+       @see Polynomial#derivative
+    */
+    
+    @Test public void testp4derivative()
+    {
+        Polynomial p = new Polynomial(new int[] {7, -8, -9, -10, -1});
+        assertEquals(new Polynomial( new int [] {28,-24,-18,-10}),p.derivative());
+    }
+    /**
+       test derivative
+       @see Polynomial#derivative
+     */
+    
+    @Test public void testp5derivative()
+    {
+        Polynomial p = new Polynomial(new int[] {1,1,0,43});
+        assertEquals(new Polynomial( new int [] {3,2,0}),p.derivative());
+    }
     /**
        test plus
        @see Polynomial#plus
