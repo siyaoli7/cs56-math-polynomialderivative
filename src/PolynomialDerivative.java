@@ -16,9 +16,17 @@ public class PolynomialDerivative{
     public static void main(String args [] ){
 	if(args.length == 0){
 	    //no input is sent through cmd line
-	    Scanner scan = new Scanner(System.in);
 	    System.out.print("Which polynomial you want to calculate the derivative of: ");
+	    Scanner scan = new Scanner(System.in);
 	    String input = scan.nextLine();
+	    Polynomial p = new Polynomial(input);
+	    System.out.println(p.derivative());
+	}else{
+	    String input = "";
+	    for(String i : args){
+		input+=i+" ";
+	    }
+	    input = input.substring(0,input.length()-1);
 	    Polynomial p = new Polynomial(input);
 	    System.out.println(p.derivative());
 	}
