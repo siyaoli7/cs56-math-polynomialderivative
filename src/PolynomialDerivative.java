@@ -61,14 +61,14 @@ public class PolynomialDerivative extends Polynomial{
 
     */
 
-    public Polynomial derivative () {
-	if(this.size()==1) return new Polynomial(new int[]{0});
+    public PolynomialDerivative derivative () {
+	if(this.size()==1) return new PolynomialDerivative(new int[]{0});
 	else{
 	    int [] newArr = new int[this.size()-1];
 	    for(int i = 1;i<this.size();i++){
 		newArr[i-1]=this.get(i)*i;
 	    }
-	    Polynomial newP = new Polynomial (Polynomial.highToLow(newArr));
+	    PolynomialDerivative newP = new PolynomialDerivative (Polynomial.highToLow(newArr));
 	    return newP;
 	}	
     }
