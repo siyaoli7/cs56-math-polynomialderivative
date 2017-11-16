@@ -27,7 +27,7 @@
 
   
   <target name="run" description="run the main">
-    <java classname="Polynomial" classpath="build"/>
+    <java classname="PolynomialDerivative" classpath="build"/>
   </target>
 
   <target name="jar" depends="compile" description="create a jar file">
