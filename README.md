@@ -6,4 +6,5 @@ Running the program prompts the user to input a polynomial string. The user must
 
 If a valid polynomial string is inputted by the user, That string is converted to Polynomial type, passed through the derivative function, and the derivative of the given function is printed out for the user.
 
-Javadoc: https://siyaoli7.github.io/cs-math-polynomialderivative/javadoc/index.html
+Javadoc: https://siyaoli7.github.io/cs56-math-polynomialderivative/javadoc/index.html
+
