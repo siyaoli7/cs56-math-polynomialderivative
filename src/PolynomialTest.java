@@ -215,8 +215,8 @@ public class PolynomialTest
     
     @Test public void testp1derivative()
     {
-        Polynomial p1 = new Polynomial(new int[] {0});
-        assertEquals(new Polynomial( new int [] {0}),p1.derivative());
+        PolynomialDerivative p1 = new PolynomialDerivative(new int[] {0});
+        assertEquals(new PolynomialDerivative( new int [] {0}),p1.derivative());
     }
     
     /**
@@ -226,8 +226,8 @@ public class PolynomialTest
     
     @Test public void testp2derivative()
     {
-        Polynomial p = new Polynomial(new int[] {2,-3});
-        assertEquals(new Polynomial( new int [] {2}),p.derivative());
+        PolynomialDerivative p = new PolynomialDerivative(new int[] {2,-3});
+        assertEquals(new PolynomialDerivative( new int [] {2}),p.derivative());
     }
 
     /**
@@ -237,8 +237,8 @@ public class PolynomialTest
     
     @Test public void testp3derivative()
     {
-        Polynomial p = new Polynomial(new int[] {1,-5,6});
-        assertEquals(new Polynomial( new int [] {2,-5}),p.derivative());
+        PolynomialDerivative p = new PolynomialDerivative(new int[] {1,-5,6});
+        assertEquals(new PolynomialDerivative( new int [] {2,-5}),p.derivative());
     }
 
     /**
@@ -248,8 +248,8 @@ public class PolynomialTest
     
     @Test public void testp4derivative()
     {
-        Polynomial p = new Polynomial(new int[] {7, -8, -9, -10, -1});
-        assertEquals(new Polynomial( new int [] {28,-24,-18,-10}),p.derivative());
+        PolynomialDerivative p = new PolynomialDerivative(new int[] {7, -8, -9, -10, -1});
+        assertEquals(new PolynomialDerivative( new int [] {28,-24,-18,-10}),p.derivative());
     }
     /**
        test derivative
@@ -258,8 +258,8 @@ public class PolynomialTest
     
     @Test public void testp5derivative()
     {
-        Polynomial p = new Polynomial(new int[] {1,1,0,43});
-        assertEquals(new Polynomial( new int [] {3,2,0}),p.derivative());
+        PolynomialDerivative p = new PolynomialDerivative(new int[] {1,1,0,43});
+        assertEquals(new PolynomialDerivative( new int [] {3,2,0}),p.derivative());
     }
     /**
        test plus
