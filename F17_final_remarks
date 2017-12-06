@@ -1,0 +1,5 @@
+Hello, future!
+
+This project is still very new and not very complicated, meaning there are a lot of ways it could go. Currently, the polynomial is typed into the terminal, which is not ideal, and the formatting of the input is very particular, which is not ideal. The formatting will be a difficult problem to fix because it is part of the Polynomial class that our instructor wrote (to me, it looks pretty incomprehensible). Another thing to work on is we are currently compiling in ant, and it would be better to move to a more modern compiler like gradle.
+
+Good luck. Happy debugging.
