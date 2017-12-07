@@ -521,23 +521,6 @@ public class Polynomial extends ArrayList<Integer> {
 	return newArr;
     }
     
-    /** return a new Polynomial which is the derivative of its original value.
-
-	@return derivative of this Polynomial
-
-    */
-
-    public Polynomial derivative () {
-	if(this.size()==1) return new Polynomial(new int[]{0});
-	else{
-	    int [] newArr = new int[this.size()-1];
-	    for(int i = 1;i<this.size();i++){
-		newArr[i-1]=this.get(i)*i;
-	    }
-	    Polynomial newP = new Polynomial (Polynomial.highToLow(newArr));
-	    return newP;
-	}	
-    }
     
     /** return a new Polynomial which has as its value the 
 	this polynomial plus the one passed in as a parameter.
